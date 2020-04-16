@@ -1,0 +1,114 @@
+
+
+* {
+    list-style: none;
+    text-decoration: none;
+   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1300px;
+    width: 90%;
+    min-height: 1000px;
+    padding: 0;
+    margin: 0 auto;
+    background: rgb(0, 0, 0);
+}
+
+header {
+    display: flex;
+}
+
+header nav {
+    margin-left: auto;
+    padding: 30px 0 0 0;
+}
+
+header nav ul {
+    display: flex;  
+    justify-content: space-around;
+    padding: 20px 0 0 0;
+}
+
+header nav ul li {
+    text-transform: capitalize;
+    padding: 5px 15px;
+    color: rgb(51, 51, 51);
+    background-color: darkgoldenrod;
+    border-radius: 30px;
+    margin: 0 5px;
+    font-size: 16px;
+    max-height: 30px;
+    
+
+}
+
+header nav ul li a:link, header nav ul li a:visited {
+    color: white;
+}
+
+header nav ul li a:hover {
+   
+    
+    color: black;
+}
+
+.welcome {
+    display: grid;
+    padding: 20px 0 0 0;
+    grid-template-rows: 2;
+    grid-template-columns: 3; 
+    color: rgb(219, 201, 201);
+}
+
+.welcome h1 {
+    grid-area: 1 / 2 / 2 / 3;
+    justify-content: center;
+    letter-spacing: 12px;
+    margin-bottom: 10px;
+
+}
+
+.welcome p {
+    grid-area: 2 / 2/ 3 / 3;
+    justify-content: center;    ;
+    letter-spacing: 8px;
+}
+
+#dropdown-content {
+    border-radius: 0; 
+    background-color: transparent;
+    color: white;   
+}
+
+.dropdown-content {
+    display: none;
+  }
+  
+  .dropdown-content a {
+    color: goldenrod;
+    text-decoration: none;
+    display: block;
+    padding:  5 0;
+    margin:0;
+  }
+  
+  .dropdown-content a:hover {
+      color: white;
+      border-spacing: none; 
+  }
+  
+  .dropdown:hover .dropdown-content {display: block;}
+
+/*Carousel*/
+
+#main-carousel-images {
+    width: 1300px;
+    min-width: 1300px;
+
+}
+  
+  
