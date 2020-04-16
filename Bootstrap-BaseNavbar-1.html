@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="Bootstrap-BaseNavbarSTYLE.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" /> -->
     <title>Base Nav - Bootstrap v4.4.x </title>
 </head>
 <body>
 <div class="container">
-    <div class="welcome" id="welcome" >
+    <div class="welcome" id="welcome" onclick="setTimeout(welcomeRemove, 5000);">
         <h1>Glow Royale</h1>
         <p>Hotel Restaurant Bar</p>
     </div>
@@ -5914,7 +5914,7 @@
             </li>
 
             <li>
-                <a href="">adventure</a>
+                <a href="">Tours</a>
             </li>
        
             <li>
@@ -5938,7 +5938,21 @@
     <hr> <!--End of Header Content-->
 <!--Carousel-->
 
+<form action="#" method="GET"> 
+    <input type="number" id="num1" />
+        <select name="" id="" >
+            <option value="add">Plus</option>
+            <option value="minus">Minus</option>
+            <option value="divide">Divided by</option>
+            <option value="multiply">Multiplyied by</option>
+        </select>
+    <input type="number" id="num2" />
+        <button type="button" onclick="Calculate()">calculate</button>
+</form>
+    <div id="answer"></div>
 
+
+<button type="button" onclick="changeContent()">Switch</button>
 <!-- <div class="carousel-container">
         <div class="carousel-inner">
           <div class="carousel-item active">
